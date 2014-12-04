@@ -2,11 +2,15 @@
   "name": "laravel-form-snippet",
   "main": "./lib/laravel-form-snippet",
   "version": "0.0.1",
+  "private": false,
   "description": "Laravel Form snippets",
   "activationCommands": {
     "atom-workspace": "laravel-form-snippet:toggle"
   },
-  "repository": "https://github.com/bazzery/laravel-form-snippet.git",
+  "repository": {
+    "type": "git",
+    "https://github.com/bazzery/laravel-form-snippet.git"
+  }
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
