@@ -1,0 +1,22 @@
+'.source.php':
+  'Form::get':
+    'prefix': 'f:get'
+    'body': """
+    {{ Form::open(['${1:url}' => '${2:path}', 'method' => 'get']) }}
+    {{ Form::close() }}
+    """
+  'Form::post':
+    'prefix': 'f:post'
+    'body': "{{ Form::open(['${1:url}' => '${2:path}', 'method' => 'post']) }}"
+  'Form::postfile':
+    'prefix': 'f:postfile'
+    'body': "{{ Form::open(['${1:url}' => '${2:path}', 'method' => 'post', 'files' => true]) }}"
+  'Form::put':
+    'prefix': 'f:put'
+    'body': "{{ Form::open(['${1:url}' => '${2:path}', 'method' => 'put']) }}"
+  'Form::putfile':
+    'prefix': 'f:putfile'
+    'body': "{{ Form::open(['${1:url}' => '${2:path}', 'method' => 'put', 'files' => true]) }}"
+  'Form::delete':
+    'prefix': 'f:delete'
+    'body': "{{ Form::open(['${1:url}' => '${2:path}', 'method' => 'delete']) }}"
